@@ -10,9 +10,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
-import com.microsoft.appcenter.AppCenter;
-import com.microsoft.appcenter.analytics.Analytics;
-import com.microsoft.appcenter.crashes.Crashes;
+
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -49,9 +47,7 @@ public class MainApplication extends Application implements ReactApplication {
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
     
-    AppCenter.start(getApplication(), "eae8e7cc-0733-4d33-83e1-1b5b7eea901d",
-                  Analytics.class, Crashes.class);
-
+    
   }
 
   /**
